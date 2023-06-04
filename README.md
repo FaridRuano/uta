@@ -1,6 +1,6 @@
 # Proyecto Final de DAS
 
-Este proyecto es desarrollado con por Farid Ruano, Kevin Alvear, Diego Cata, Lenin Moreno
+Este proyecto es desarrollado por Farid Ruano, Kevin Alvear,Daniel Galarza, Diego Cata, Lenin Moreno
 
 ## Acerca del proyecto
 
