@@ -3,6 +3,8 @@ import { MENUITEMS } from './menu'
 import { Link } from "react-router-dom"
 import  logo from "../../../assets/images/logo-uta.png"
 import { LogOut } from "react-feather";
+import "./style.scss"
+
 const Sidebar = () => {
   const [mainmenu, setMainMenu] = useState(MENUITEMS)
 	const [isChange, setIsChange] = useState(false)
@@ -49,7 +51,7 @@ const Sidebar = () => {
 		<li className="active" key={i}>							
       <Link
         to={`${process.env.PUBLIC_URL}${menuItem.path}`}
-        className="sidebar-header active"
+        className="option-header active"
         onClick={() => setNavActive(menuItem)}
       >
         <menuItem.icon />
@@ -62,17 +64,17 @@ const Sidebar = () => {
 	return (
 		<Fragment>
 			<div className="page-sidebar">
-				<div className="main-header-left d-none d-lg-block">
-					<div className="logo-wrapper">
+				<div className="header-sidebar">
+					<div className="header-sidebar-logo">
 						<Link to={`${process.env.PUBLIC_URL}/inicio`}>
-							<img className="blur-up lazyloaded" src={logo} alt="" style={{height: '66px'}}/>
+							<img className="uta-logo" src={logo} alt="Inicio" style={{height: '66px'}}/>
 						</Link>            
 					</div>
 				</div>
-				<div className="sidebar custom-scrollbar">
-					<ul className="sidebar-menu">
+				<div className="body-sidebar">
+					<ul className="body-sidebar-options">
             {mainMenu}
-            <li>
+            <li className="logout-sidebar">
               <Link to={`${process.env.PUBLIC_URL}/`}>
                 <LogOut/>
                 <span>Cerrar Sesion</span>

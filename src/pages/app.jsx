@@ -1,17 +1,19 @@
 import { Outlet } from "react-router-dom"
 import Sidebar from "../components/common/sidebar/sidebar"
+import '../assets/scss/app_page.scss'
+import { Fragment } from "react"
 
 const App = () => {
 	
 	return (
-		<div>
-			<div>
+		<Fragment className="main-page">
+			<div className="page-container">
+				<Sidebar/>
 				<div>
-                    <Sidebar/>
-					<div><Outlet/></div>
+					<Outlet/>
 				</div>
-			</div>			
-		</div>
+			</div>
+		</Fragment>
 	)
 }
 export default App
