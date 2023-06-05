@@ -8,7 +8,7 @@ const Tabset = () => {
   const history = useNavigate();
 
   const routeChange = () => {
-    history('/dashboard'); // Replace '/new-route' with the desired route path
+    history('/inicio'); // Replace '/new-route' with the desired route path
   };
   return (
     <Fragment>

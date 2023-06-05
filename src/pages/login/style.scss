@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../../assets/images/login-background.jpg');
-    background-size: cover; /* Adjust the image size to cover the container */
-    background-position: center; /* Center the background image */
+    background: rgb(48,7,26);
+    background: linear-gradient(90deg, rgba(48,7,26,1) 0%, rgba(200,37,37,1) 64%);
 }
