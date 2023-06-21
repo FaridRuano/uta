@@ -46,7 +46,7 @@ const Sidebar = ({ isOpen }) => {
 		item.active = !item.active;
 		setMainMenu(MENUITEMS);
 	};
-	
+
 	const mainMenu = mainmenu.map((menuItem, i) => (
 		<li className={!menuItem.active ? "option-sidebar" : "option-sidebar active-op"} key={i}>
 			<Link
@@ -59,6 +59,18 @@ const Sidebar = ({ isOpen }) => {
 			</Link>
 		</li>
 	));
+
+	const mainMenuClosed = mainmenu.map((menuItem, i) => (
+		<li className={!menuItem.active ?"option-sidebar-cl":"option-sidebar-cl active-op"} key={i}>							
+			<Link
+				to={`${process.env.PUBLIC_URL}${menuItem.path}`}
+				className={!menuItem.active ? "option-header" : "option-header active-op-hd"}
+				onClick={() => setNavActive(menuItem)}
+			>
+        		<menuItem.icon className={!isOpen ? "option-header-icon" : "option-header-icon closed-ops"}/>
+      		</Link>						
+		</li>
+	));	
 
 
 	return (
