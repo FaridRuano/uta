@@ -1,15 +1,15 @@
 import React, { Fragment, useEffect, useState } from "react"
 import { MENUITEMS } from './menu'
 import { Link } from "react-router-dom"
-import  logo from "../../../assets/images/logo-uta.png"
+import logo from "../../../assets/images/logo-uta.png"
 import { LogOut, Box } from "react-feather";
 import "./style.scss"
 
 const Sidebar = ({ isOpen }) => {
-  const [mainmenu, setMainMenu] = useState(MENUITEMS)
+	const [mainmenu, setMainMenu] = useState(MENUITEMS)
 	const [isChange, setIsChange] = useState(false)
 
-  useEffect(() => {
+	useEffect(() => {
 		const currentUrl = window.location.pathname;
 		mainmenu.map((items) => {
 			mainMenu.filter((Items) => {
@@ -21,6 +21,12 @@ const Sidebar = ({ isOpen }) => {
 					subItems.children.filter((subSubItems) => {
 					});
 					return subItems;
+					if (subSubItems.path === currentUrl) {
+						setNavActive(subSubItems);
+						return true;
+					} else {
+						return false;
+					}
 				});
 				return Items;
 			});
@@ -29,21 +35,21 @@ const Sidebar = ({ isOpen }) => {
 		return () => {
 			setMainMenu(MENUITEMS);
 		};
-	},[isChange]);
-	
+	}, [isChange]);
+
 	const mainMenu = mainmenu.map((menuItem, i) => (
-		<li className={!menuItem.active ?"option-sidebar":"option-sidebar active-op"} key={i}>							
+		<li className={!menuItem.active ? "option-sidebar" : "option-sidebar active-op"} key={i}>
 			<Link
 				to={`${process.env.PUBLIC_URL}${menuItem.path}`}
 				className={!menuItem.active ? "option-header" : "option-header active-op-hd"}
 				onClick={() => setNavActive(menuItem)}
 			>
-        		<menuItem.icon className={!isOpen ? "option-header-icon" : "option-header-icon closed-ops"}/>
-        		<span>{menuItem.title}</span>        
-      		</Link>						
+				<menuItem.icon className={!isOpen ? "option-header-icon" : "option-header-icon closed-ops"} />
+				<span>{menuItem.title}</span>
+			</Link>
 		</li>
-	));		
-	
+	));
+
 
 	return (
 		<Fragment>
@@ -51,8 +57,8 @@ const Sidebar = ({ isOpen }) => {
 				<div className={!isOpen ? "header-sidebar" : "header-sidebar closed-hd"}>
 					<div className="header-sidebar-logo">
 						<Link to={`${process.env.PUBLIC_URL}/inicio`}>
-							<img className={!isOpen ? "uta-logo" : "uta-logo closed-lg"} src={logo} alt="Inicio"/>
-						</Link>            
+							<img className={!isOpen ? "uta-logo" : "uta-logo closed-lg"} src={logo} alt="Inicio" />
+						</Link>
 					</div>
 					<div className={!isOpen ? "header-sidebar-title" : "header-sidebar-title closed-ti"}>
 						<span className="title-name">Universidad</span>
@@ -61,18 +67,18 @@ const Sidebar = ({ isOpen }) => {
 				</div>
 				<div className="body-sidebar">
 					{!isOpen ? (
-						<span className="menu-span">Menu</span>							
+						<span className="menu-span">Menu</span>
 					) : (
 						<div className="menu-icon-side">
-							<Box/>
+							<Box />
 						</div>
-					)}	
-					<div className="separator"/>
+					)}
+					<div className="separator" />
 					<div className="body-sidebar-options">
 						{!isOpen ? mainMenu : mainMenuClosed}
 						<li className={!isOpen ? "option-sidebar logout-sidebar" : "option-sidebar-cl logout-sidebar"}>
 							<Link to={`${process.env.PUBLIC_URL}/`} className="option-header">
-								
+
 							</Link>
 						</li>
 					</div>
