@@ -37,6 +37,16 @@ const Sidebar = ({ isOpen }) => {
 		};
 	}, [isChange]);
 
+	const setNavActive = (item) => {
+		setIsChange(!isChange)
+		MENUITEMS.filter((menuItem) => {
+			if (menuItem !== item) menuItem.active = false;			
+			return false;
+		});
+		item.active = !item.active;
+		setMainMenu(MENUITEMS);
+	};
+	
 	const mainMenu = mainmenu.map((menuItem, i) => (
 		<li className={!menuItem.active ? "option-sidebar" : "option-sidebar active-op"} key={i}>
 			<Link
