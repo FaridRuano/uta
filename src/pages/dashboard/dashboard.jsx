@@ -24,6 +24,9 @@ const Dashboard = () => {
           <div onClick={()=>setSelTitle("Procesos")}>
             <TabsetAdmin title="Procesos"/>
           </div>
+          <div onClick={()=>setSelTitle("Docentes")}>
+            <TabsetAdmin title="Docentes"/>
+          </div>
         </div>
       </div>
 
@@ -49,6 +52,8 @@ const Dashboard = () => {
           </div>
           <div className='card-body'>
               <div>
+                  {filteredDocs.map((doc,i) => (
+                    <Fragment key={i}>
                   {filteredDocs.map((doc) => (
                     <Fragment>
                       <span>{doc.name}</span>

@@ -16,6 +16,8 @@ const App = () => {
 		<div className="main-page">
 			<div className="page-container">
 				<Sidebar className="sidebar-page" isOpen={sideOpen}/>
+				<Header activeNav={toggleOpen} isOpen={sideOpen}/>	
+				<div className={!sideOpen ? "main-content" : "main-content-cl"}>
 				<div className={!sideOpen ? "main-content" : "main-content-cl"}>
 					<Header className="header-page" activeNav={toggleOpen}/>	
 					<Outlet/>
