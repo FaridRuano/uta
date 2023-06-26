@@ -48,3 +48,33 @@
     color: #353535;
 }
 
+.search-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-input {
+    border: none;
+    background-color: #f5f5f5;
+    color: #353535;
+    padding: 12px;    
+    border-radius: 25px;
+    width: 200px;
+    font-size: 15px;   
+    transition: .3s ease-out;
+    &::placeholder{
+        color: rgb(138, 138, 138);
+    }
+    @media screen and (max-width: 430px) {
+        width: 60vw;
+    }
+}
+
+.search-input:focus{
+    outline: none;
+    box-shadow: 0 3px 5px #c5c5c5;
+    
+}
