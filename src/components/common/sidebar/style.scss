@@ -37,3 +37,59 @@
     opacity: 1;
 }
 
+.closed-ti {        
+    transform: scale(0.01);
+    opacity: 0;
+}
+
+.title-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.uta-logo {
+    height: 66px;
+    margin-right: 10px;
+    transition: .3s ease-out;
+}
+
+.closed-lg {
+    height: 30px;
+    margin-left: 350px;
+    margin-top: 10px;
+
+}
+
+.logout-sidebar {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;    
+}
+
+.option-sidebar {      
+    padding-left: 20px;
+    list-style: none;     
+    color: white;
+    transition: .3s ease-out;    
+}
+
+.option-sidebar-cl {      
+    display: flex;
+    justify-content: end;
+    padding: 13px;
+    list-style: none;     
+    color: white;
+    transition: .3s ease-out;    
+}
+
+
+
+.option-sidebar:hover,
+.option-sidebar-cl:hover {      
+    background-color: rgb(255, 89, 89);
+}
+
+.active-op {
+    background-color: white;
+}
+
