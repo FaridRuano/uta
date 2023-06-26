@@ -20,3 +20,31 @@
     margin: 10px 10px 0 10px;
 }
 
+.card-wrap {
+    background-color: rgb(253, 253, 253);
+    padding: 20px;
+    border-radius: 25px;
+    width: 90vw;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.15);        
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #353535;
+    @media screen and (max-width: 430px) {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+}
+
+.docs-title span {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #353535;
+}
+
