@@ -93,3 +93,49 @@
     background-color: white;
 }
 
+.option-header {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;   
+}
+
+.active-op-hd {
+    color: #000;
+    font-weight: bold;
+}
+
+.option-header-icon {    
+    width: 20px;
+}
+
+.option-header span {
+    margin: 10px;
+    
+}
+
+.body-sidebar {
+    margin-top: 30px;
+}
+
+.body-sidebar-options {
+    margin-top: 10px;
+}
+
+.menu-span {
+    color: white;
+    margin-left: 20px;    
+    font-weight: bold;    
+}
+
+.menu-icon-side{
+    color: white;
+    margin-left: 215px;
+}
+
+.separator {
+    margin: 10px;
+    border: 1px solid white;
+}
