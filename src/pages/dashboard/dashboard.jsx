@@ -1,4 +1,3 @@
-// dashboard jsx
 import React, { Fragment, useState } from 'react'
 import TabsetAdmin from '../../components/dashboard/Tabset/tabset'
 import './style.scss'
