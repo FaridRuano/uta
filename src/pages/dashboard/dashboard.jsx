@@ -1,3 +1,4 @@
+// dashboard jsx
 import React, { Fragment, useState } from 'react'
 import TabsetAdmin from '../../components/dashboard/Tabset/tabset'
 import './style.scss'
@@ -53,6 +54,8 @@ const Dashboard = () => {
               <div>
                   {filteredDocs.map((doc,i) => (
                     <Fragment key={i}>
+                  {filteredDocs.map((doc) => (
+                    <Fragment>
                       <span>{doc.name}</span>
 
                     </Fragment>
