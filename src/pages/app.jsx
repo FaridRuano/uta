@@ -1,19 +1,27 @@
 import { Outlet } from "react-router-dom"
 import Sidebar from "../components/common/sidebar/sidebar"
 import '../assets/scss/app_page.scss'
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
+import Header from "../components/common/header/header"
 
 const App = () => {
-	
+	const [sideOpen, setSideOpen] = useState(true)
+
+	const toggleOpen = () => {
+		setSideOpen(!sideOpen)
+		console.log(sideOpen)
+	}
+
 	return (
-		<Fragment className="main-page">
+		<div className="main-page">
 			<div className="page-container">
-				<Sidebar/>
-				<div>
+				<Sidebar className="sidebar-page" isOpen={sideOpen}/>
+				<Header activeNav={toggleOpen} isOpen={sideOpen}/>	
+				<div className={!sideOpen ? "main-content" : "main-content-cl"}>
 					<Outlet/>
 				</div>
 			</div>
-		</Fragment>
+		</div>
 	)
 }
 export default App
