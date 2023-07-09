@@ -92,6 +92,14 @@
 
 .option-sidebar:hover,
 .option-sidebar-cl:hover {      
+    background-color: rgb(255, 89, 89);    
+    transition: .3s ease-out;    
+}
+
+
+
+.option-sidebar:hover,
+.option-sidebar-cl:hover {      
     background-color: rgb(255, 89, 89);
 }
 
