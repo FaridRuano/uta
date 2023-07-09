@@ -9,7 +9,7 @@ import Routers from './routes/routers';
 function App() {
   return (
     <Fragment>
-      <div className='app-background'>
+      <div>
         <React.StrictMode>
           <BrowserRouter basename={"/"}>
             <Routers />
