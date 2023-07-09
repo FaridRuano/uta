@@ -1,0 +1,46 @@
+.form-admin {
+    width: 80%;
+    margin-left: 10%;
+    transition: .3s ease-out;       
+    @media screen and (max-width: 768px){
+        width: 100%;    
+        margin-left: 0;
+    }
+}
+
+.form-admin-in {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    gap: 1rem;
+    transition: .3s ease-out;   
+    @media screen and (max-width: 500px){
+        flex-direction: column;
+        align-items: start;       
+    }
+}
+
+.form-admin-in label {
+    font-weight: 500;
+    width: 30%;
+    transition: .3s ease-out;
+
+    @media screen and (max-width: 500px){
+        width: 100%;           
+    }
+}
+
+.form-admin-in input {
+    width: 60%;
+    border: none;    
+    background-color: #ffffff00;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    @media screen and (max-width: 500px){
+        width: 100%;           
+    }
+}
+
+.form-admin-in input:focus {
+    outline: none;
+}
