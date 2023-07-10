@@ -42,26 +42,23 @@ Sigue los pasos a continuación para instalar el sistema de gestión de formatos
 3. Instala las dependencias necesarias:
     - npm install
 
-4. Configuración de la API de Google Drive:
-   - Crea un proyecto en la Consola de Desarrolladores de Google.
-   - Habilita la API de Google Drive y obtén las credenciales necesarias.
+4. Configuración de la API de Microsoft Graph y OneDrive:
+   - Crea una aplicación en el Portal de registro de aplicaciones de Azure.
+   - Obtén las credenciales de la aplicación.
    - Copia las credenciales en el archivo de configuración correspondiente.
-5. Configuración de la autenticación mediante Microsoft:
-   - Obtén las credenciales de autenticación de Microsoft.
-   - Configura las credenciales en el archivo de configuración correspondiente.
 
-6. Inicia la aplicación:
+5. Inicia la aplicación:
     - npm start
 
-7. Si no se ha abierto ninguna ventana del navegador automáticamente abre tu navegador e ingresa `http://localhost:3000/` para acceder al sistema.
+6. Si no se ha abierto ninguna ventana del navegador automáticamente abre tu navegador e ingresa `http://localhost:3000/` para acceder al sistema.
 
 ## Uso
 Una vez que hayas instalado y configurado el sistema de gestión de formatos, podrás utilizar las siguientes funcionalidades:
 
 - Inicia sesión con tu cuenta de Microsoft para acceder al sistema.
 - Explora los diferentes formatos disponibles.
-- Actualiza los formatos según corresponda al periodo académico (Secretaria).
-- Los formatos se guardarán y gestionarán mediante la integración con la API de Google Drive.
+- Actualiza los formatos según corresponda al periodo académico.
+- Los formatos se guardarán y gestionarán mediante la integración con la API de Microsoft Graph y OneDrive.
 
 ## Contribución
 
