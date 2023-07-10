@@ -1,0 +1,14 @@
+.doc-warp {
+    width: 100%;
+    display: flex;
+    flex-direction: row;   
+    gap: 1rem; 
+}
+
+.doc-viewer {
+    width: 50%;
+}
+
+.doc-params {
+    width: 50%;
+}
