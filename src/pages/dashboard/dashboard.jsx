@@ -1,3 +1,5 @@
+import React, { Fragment, useState } from 'react'
+
 // dashboard jsx commit
 import React, { Fragment, useEffect, useState } from 'react'
 import TabsetAdmin from '../../components/dashboard/Tabset/tabset'
@@ -52,6 +54,7 @@ const Dashboard = () => {
           </div>
           <div onClick={()=>hanTitle("procesos")}>
             <TabsetAdmin title="Procesos"/>
+          </div>
           </div>          
           <div onClick={()=>hanTitle("docentes")}>
             <TabsetAdmin title="Docentes"/>

@@ -7,6 +7,9 @@ const TabsetAdmin = ({title}) => {
   const [sideOpen, setSideOpen] = useContext(Context)  
 
 
+export default TabsetAdmin
+
+
   return (
     <Fragment>
         <div className={sideOpen?'tabset-container':'tabset-container cld'}>

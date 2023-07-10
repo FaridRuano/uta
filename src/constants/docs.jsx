@@ -23,6 +23,7 @@ export const DOCS = [
     {
         id: "8", name: 'Documento SJ1I2s3', cat: 'titulacion'
     },
+
     {
         id: "9", name: 'Documento FHXQ12', cat: 'docentes'
     },
