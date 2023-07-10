@@ -5,6 +5,7 @@ import Dashboard from '../pages/dashboard/dashboard'
 import Admin from '../pages/admin/admin'
 import Info from '../pages/info/info'
 import MyDocs from '../pages/mydocs/mydocs'
+import DocViewer from '../pages/doc/doc-viewer'
 
 const LayoutRoutes = () => {
   return (
@@ -26,6 +27,10 @@ const LayoutRoutes = () => {
                 <Route
                     path={`${process.env.PUBLIC_URL}/admin`}
                     element={<Admin/>}
+                />
+                <Route
+                    path={`${process.env.PUBLIC_URL}/doc-viewer/:id?`}
+                    element={<DocViewer/>}
                 />
             </Route>
         </Routes>
