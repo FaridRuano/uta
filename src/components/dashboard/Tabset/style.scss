@@ -1,35 +1,42 @@
 .tabset-container {
-    margin: 10px;
+    margin: 5px;
     width: 20vw;
-    height: 200px;
+    height: 150px;
     border-radius: 25px;
     background: linear-gradient(135deg, #f0594f, #d12b34);      
     box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.2);        
     cursor: pointer;
-    transition: .3s ease-out;
-    @media screen and (max-width: 1010px) {
-        width: 20vw;
-        height: 200px;
-             
-        
-    }
-    @media screen and (max-width: 800px) {
-        width: 90vw;
-        height: 17vh;
-        flex-direction: row;
-        align-items: center;
-        padding: 0 0 0 20px;
-        gap: 3rem;
-    }
+    transition: .3s ease-out;   
     padding-top: 40px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: start;
+    gap: 0.5rem;
+    align-items: start; 
+    @media screen and (max-width: 900px) {
+        height: 120px;
+        padding-top: 30px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 42vw;
+        height: 60px;
+        padding-top: 0;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+    @media screen and (max-width: 400px) {       
+        gap: 1.1rem;
+        padding-left: 10px;
+    }
+}
 
-
-    
+.cld {
+    width: 16vw;
+    @media screen and (max-width: 768px) {
+        width: 42vw;
+    }    
 }
 
 .tabset-container:hover{
@@ -38,82 +45,20 @@
 
 .tabset-icon {
     color: white;  
-    transform: scale(3.1) translateX(5px);
-    
+    transform: scale(2.1) translateX(5px);        
+    @media screen and (max-width: 500px) {
+        transform: scale(1.5) translateX(5px);        
+    }
 }
-
 
 .tabset-title {
     color: white;
     font-weight: bold;
-    font-size: 2rem;
-    @media screen and (max-width: 1010px) {
-        font-size: 30px;
+    font-size: 1.5rem;   
+    @media screen and (max-width: 900px) {
+        font-size: 1.25rem;
     }
-    @media screen and (max-width: 800px) {
-        font-size: 25px;
-    }
-    @media screen and (max-width: 430px) {
-        font-size: 20px;
+    @media screen and (max-width: 500px) {
+        font-size: 1rem;
     }
 }
-.tabset-container {
-    margin: 10px;
-    width: 23vw;
-    height: 200px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #f0594f, #d12b34);      
-    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.2);        
-    cursor: pointer;
-    transition: .3s ease-out;
-    @media screen and (max-width: 1010px) {
-        width: 25vw;
-        height: 200px;
-             
-        
-    }
-    @media screen and (max-width: 800px) {
-        width: 90vw;
-        height: 17vh;
-        flex-direction: row;
-        align-items: center;
-        padding: 0 0 0 20px;
-        gap: 3rem;
-    }
-    padding-top: 40px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: start;
-
-
-    
-}
-
-.tabset-container:hover{
-    transform: scale(1.01) translateY(-5px);
-}
-
-.tabset-icon {
-    color: white;  
-    transform: scale(3.1) translateX(5px);
-    
-}
-
-
-.tabset-title {
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
-    @media screen and (max-width: 1010px) {
-        font-size: 30px;
-    }
-    @media screen and (max-width: 800px) {
-        font-size: 25px;
-    }
-    @media screen and (max-width: 430px) {
-        font-size: 20px;
-    }
-}
-
