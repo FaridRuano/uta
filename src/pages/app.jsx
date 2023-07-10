@@ -28,3 +28,16 @@ const App = () => {
   );
 };
 export default App;
+	return (
+		<div className="main-page">
+			<div className="page-container">
+				<Sidebar className="sidebar-page" isOpen={sideOpen}/>
+				<Header activeNav={toggleOpen} isOpen={sideOpen}/>	
+				<div className={!sideOpen ? "main-content" : "main-content-cl"}>
+					<Outlet/>
+				</div>
+			</div>
+		</div>
+	)
+}
+export default App

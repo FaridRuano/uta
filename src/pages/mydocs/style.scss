@@ -1,0 +1,81 @@
+style.scss
+
+
+.title {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.title h2{ 
+    font-size: 33px;
+    color:#242424;
+    
+}
+
+.title p{
+    color: #696969;
+    margin-left: 10px;
+}
+
+.docs-table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;    
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.15);        
+}
+
+.docs-table-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:#242424;
+
+}
+
+.docs-table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:#242424;
+    cursor: pointer;   
+    transition: .3s ease-out;
+
+}
+
+.docs-table-row:hover{
+    background-color: #cccccc;
+    transform: scale(1.005) translateY(-5px);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.15);            
+}
+
+.table-row {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+
+.button-mydocs {
+    background-color: #4b4b4b;
+    border: none;
+    padding: 7px;
+    margin: 2px;
+    color: white;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+
+.button-mydocs:hover{
+    background-color: #f0f0f0;
+    color: rgb(49, 49, 49);
+}
+
+.ac {
+    background-color: #278fa3;
+}
+
+.de {
+    background-color: #2b2828;
+}
